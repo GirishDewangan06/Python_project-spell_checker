@@ -62,10 +62,9 @@ def main():
         print("No text found in the file.")
         return
 
-    # Display extracted text (preview)
-    print("\nExtracted Text (Preview):\n", text[:500], "...\n")  # Limit preview to 500 characters
-
-    # Check spelling
+    # Display extracted text 
+    print("\nExtracted Text (Preview):\n", text[:500], "...\n")  
+    
     corrections = check_spelling(text)
     if corrections:
         print("\nSpelling Corrections:")
